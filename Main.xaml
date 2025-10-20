@@ -1,0 +1,198 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,734" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="cities_DT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Temperature_DT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[cities_DT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="484,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="cities.xlsx" />
+    <ui:BuildDataTable DataTable="[Temperature_DT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;City_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Temperature&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;City_x0020_Name&gt;text&lt;/City_x0020_Name&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,478" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="3d06b16d-2d3e-4b19-bf4c-3444b7645734" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[cities_DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,975" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,825" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="temperature" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'combo box Search Google…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3d06b16d-2d3e-4b19-bf4c-3444b7645734" Text="[&quot;Temperature in &quot; + CurrentRow(&quot;City&quot;).ToString + &quot;[k(Enter)]&quot;]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="google.com" ContentHash="iD8f0HKpbE2_Sv_RqSNqUA" DesignTimeRectangle="395, 360, 440, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' /&gt;" Guid="2d0e9642-d206-4575-bf62-9bf95c8b4788" InformativeScreenshot="e9650026afcd2afd1faa500896240e5b.png" Reference="Y7oYLQnqWka-DzSuckEX9Q/Vc-cpbwV5keeLgYxqbO6Uw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '28'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="3d06b16d-2d3e-4b19-bf4c-3444b7645734" TextString="[temperature]" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="google.com/search" ContentHash="srP7AqyaMEqHF1x4zdspGQ" DesignTimeRectangle="258, 351, 52, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' /&gt;" Guid="31be2eb4-3f0f-4b4a-8daa-723b2ba4db4f" InformativeScreenshot="6c143a73b27d73a9498d708969967111.png" Reference="Y7oYLQnqWka-DzSuckEX9Q/R2UZFRgXYkq_zdUYeAUrgw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='temperature in dubai - Google Search' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="416,122" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" ScopeIdentifier="3d06b16d-2d3e-4b19-bf4c-3444b7645734" Version="V5" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(&quot;City&quot;).ToString,temperature}]" DataTable="[Temperature_DT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,212" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[Temperature_DT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,141" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" WorkbookPath="temperature.xlsx" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -165, 1936, 1056" BrowserType="Chrome" ContentHash="7ugf6LHD8UGvE-oA6MUEfw" IconBase64="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" InformativeScreenshot="c5668e145f977ff90f633dbbad21526f.png" Reference="Y7oYLQnqWka-DzSuckEX9Q/YF4F-jJ_-UCVfRnHrePwVg" Selector="&lt;html app='chrome.exe' url='www.google.com' /&gt;" Url="www.google.com" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
